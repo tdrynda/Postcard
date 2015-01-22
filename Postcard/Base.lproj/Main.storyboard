@@ -90,6 +90,15 @@
                                     <rect key="frame" x="16" y="82" width="336" height="83"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzQ-hY-Fxf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="197" width="223" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDB-KR-xMH">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +122,7 @@
                                 <exclude reference="OSb-ol-HLa"/>
                                 <exclude reference="66I-hs-BYz"/>
                                 <exclude reference="RZa-Hf-j8w"/>
+                                <exclude reference="dzQ-hY-Fxf"/>
                                 <exclude reference="eDB-KR-xMH"/>
                             </mask>
                         </variation>
@@ -122,6 +132,7 @@
                                 <include reference="OSb-ol-HLa"/>
                                 <include reference="66I-hs-BYz"/>
                                 <include reference="RZa-Hf-j8w"/>
+                                <include reference="dzQ-hY-Fxf"/>
                                 <include reference="eDB-KR-xMH"/>
                             </mask>
                         </variation>
@@ -131,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="OSb-ol-HLa" id="iyY-9A-jYa"/>
                         <outlet property="mailButton" destination="eDB-KR-xMH" id="xHl-yG-vLb"/>
                         <outlet property="messageLabel" destination="RZa-Hf-j8w" id="t8u-mC-r3n"/>
+                        <outlet property="nameLabel" destination="dzQ-hY-Fxf" id="bLe-ez-gfr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

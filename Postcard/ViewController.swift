@@ -11,13 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
     
-    var buttonOn = false
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,33 +28,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        // Unhide the labels.
         messageLabel.hidden = false
+        nameLabel.hidden = false
+        
+        // Set message label text and colour.
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.blueColor()
+        
+        // Set name label text and colour.
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
+        
+        // Clear the text entry fields.
         enterMessageTextField.text = ""
-        enterMessageTextField.resignFirstResponder() // Get rid of kbd.
-        // First responder to enterMessageTextField is the keyboard.
+        enterNameTextField.text = ""
+        
+        // Get rid of the keyboard.
+        enterMessageTextField.resignFirstResponder()
+        enterNameTextField.resignFirstResponder()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
-
-/*
-        if(buttonOn)
-        {
-            sender.backgroundColor = UIColor.orangeColor()
-            messageLabel.backgroundColor = UIColor.whiteColor()
-            messageLabel.hidden = true
-            messageLabel.text = ""
-        }
-        else
-        {
-            sender.backgroundColor = UIColor.redColor()
-            //sender.v
-            messageLabel.backgroundColor = UIColor.redColor()
-            messageLabel.text = "Hello, world."
-            messageLabel.hidden = false
-        }
-        buttonOn != buttonOn
-*/
     }
 }
 
