@@ -37,8 +37,7 @@ class ViewController: UIViewController {
         // First responder to enterMessageTextField is the keyboard.
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
-        
-        
+
 /*
         if(buttonOn)
         {
